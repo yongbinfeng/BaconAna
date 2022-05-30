@@ -15,7 +15,7 @@ namespace baconhep
       pfPt(0), pfEta(0), pfPhi(0),
       trkIso(-1), ecalIso(-1), hcalIso(-1), hcalDepth1Iso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1), puIso(-1),
-      d0(-999.), dz(-999.), sip3d(-999.),
+      d0(-999.), dz(-999.), sip3d(-999.), d0BS(-999.), dzBS(-999.),
       sieie(0), e1x5(0), e2x5(0), e5x5(0), r9(0),
       eoverp(0), hovere(0), fbrem(0),
       dEtaInSeed(0), dEtaIn(0), dPhiIn(0),
@@ -36,6 +36,7 @@ namespace baconhep
       float          trkIso, ecalIso, hcalIso, hcalDepth1Iso;  // detector isolation
       float          chHadIso, gammaIso, neuHadIso, puIso;     // PF isolation variables
       float          d0, dz, sip3d;                            // impact parameter
+      float          d0BS, dzBS;                               // impact parameter w.r.t beamspot (dzBS probably makes little sense here since beamspot in z is a region).
       float          sieie, e1x5, e2x5, e5x5, r9;              // shower shape
       float          eoverp;                                   // E/p
       float          hovere;                                   // H/E

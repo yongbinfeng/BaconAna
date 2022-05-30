@@ -15,7 +15,7 @@ namespace baconhep
       pfPt(0), pfEta(0), pfPhi(0),
       trkIso(-1), ecalIso(-1), hcalIso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1), puIso(-1),
-      d0(-999.), dz(-999.), sip3d(-999.),
+      d0(-999.), dz(-999.), sip3d(-999.),d0BS(-999.), dzBS(-999.),
       tkNchi2(-999.), muNchi2(-999.),
       trkKink(0), glbKink(0),
       q(0),
@@ -35,6 +35,7 @@ namespace baconhep
       float          trkIso, ecalIso, hcalIso;              // detector isolation
       float          chHadIso, gammaIso, neuHadIso, puIso;  // PF isolation variables
       float          d0, dz, sip3d;                         // impact parameter
+      float          d0BS, dzBS;                               // impact parameter w.r.t beamspot (dzBS probably makes little sense here since beamspot in z is a region).
       float          tkNchi2, muNchi2;                      // track fit normalized chi-square
       float          trkKink, glbKink;                      // track kink
       int            q;                                     // charge
